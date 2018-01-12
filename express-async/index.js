@@ -1,0 +1,12 @@
+/* eslint-disable no-console */
+const express = require('express');
+
+const myAsync = () => new Promise(resolve => setTimeout(resolve, 1000, 'Hello World!'));
+const app = express();
+app.get('/', async (req, res) => {
+  const body = [];
+  body.push(await myAsync());
+  body.push(await myAsync());
+  res.send(body.join(' '));
+});
+app.listen(3000, () => console.log('Example app listening on port 3000!'));
