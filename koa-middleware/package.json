@@ -1,5 +1,5 @@
 {
-  "name": "express-middleware",
+  "name": "koa-middleware",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -14,7 +14,6 @@
     "eslint-plugin-import": "2.8.0"
   },
   "dependencies": {
-    "express": "4.16.2",
-    "on-headers": "1.0.1"
+    "koa": "2.4.1"
   }
 }
