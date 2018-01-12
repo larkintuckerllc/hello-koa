@@ -9,7 +9,7 @@ const myMiddleware = (req, res, next) => {
     const end = Date.now();
     res.set('X-Response-Time', `${(end - start).toString()} ms`);
   });
-  // res.set('X-Response-Time', '0 ms'); // NOT FUNCTIONAL
+  // res.set('X-Response-Time', '0 ms'); // NON-FUNCTIONAL
   next();
 };
 const app = express();
